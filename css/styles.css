@@ -503,43 +503,51 @@ img {
 
 .subscribe-text {
   margin-bottom: 16px;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.02px;
-color: var(--secont-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secont-text-color);
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-input {
-  margin-right: 24px;
   border-radius: 4px;
   border: 1px solid var(--secont-text-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-background-color: transparent;
-height: 40px;
-padding-left: 16px;
-color: var(--secont-text-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  height: 40px;
+  width: 264px;
+  padding-left: 16px;
+  color: var(--secont-text-color);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .footer-input::placeholder {
-  font-size: 12px;
-line-height: 24px;
-letter-spacing: 0.48px;
-color: var(--secont-text-color);
-}
-.footer-input:focus {
-  border-color: var(--logo-color);
+  color: var(--secont-text-color);
 }
 
 .footer-btn {
   border-radius: 4px;
-background: var(--logo-color);
-color: var(--secont-text-color);
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.64px;
-height: 40px;
-padding: 8px 24px;
+  background: var(--logo-color);
+  color: var(--secont-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  height: 40px;
+  min-width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
 }
 .icon-telegram {
   margin-left: 16px;
@@ -621,11 +629,11 @@ padding: 8px 24px;
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  }
+}
 
-.portfolio-link:hover .portfolio-hover-text, 
+.portfolio-link:hover .portfolio-hover-text,
 .portfolio-link:focus .portfolio-hover-text {
-transform: translateY(0%); 
+  transform: translateY(0%);
 }
 
 .portfolio-hover {
@@ -655,19 +663,21 @@ transform: translateY(0%);
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-width: 408px;
-min-height: 584px;
-background: #fcfcfc;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
   position: absolute;
@@ -679,19 +689,21 @@ border-radius: 4px;
   justify-content: center;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-padding: 0;
-cursor: pointer;
-width: 24px;
-height: 24px;
- transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover, .modal-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--header-link-color);
   border: none;
   fill: var(--secont-text-color);
 }
-.modal-icon{
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
