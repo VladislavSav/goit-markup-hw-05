@@ -411,14 +411,14 @@
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form">
             <label for="footer-imail" class="footer-label">
-            <input
-              type="email"
-              name="footer-email"
-              placeholder="E-mail"
-              class="footer-input"
-              id="footer-imail"
-            /> 
-            </label>         
+              <input
+                type="email"
+                name="footer-email"
+                placeholder="E-mail"
+                class="footer-input"
+                id="footer-imail"
+              />
+            </label>
             <button type="submit" class="footer-btn">
               Subscribe
               <svg class="icon-telegram" width="24" height="24">
@@ -436,6 +436,53 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-header">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <div class="modal-form-container">
+            <label for="user-name" class="input-label">Name</label>
+            <div class="modal-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input-text"
+              />
+              <svg class="modal-icon"><use href="./images/icons.svg#icon-person-black-18dp-1-1" width="18" height="24"></use></svg>
+            </div>
+          </div>
+          <div class="modal-form-container">
+            <label for="user-tel" class="input-label">Phone</label>
+            <div class="modal-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="input-text"
+              />
+              <svg class="modal-icon"><use href="./images/icons.svg#icon-phone-black-18dp-1-1" width="18" height="24"></use></svg>
+            </div>
+          </div>
+          <div class="modal-form-container">
+            <label for="user-email" class="input-label">Email</label>
+            <div class="modal-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="input-text"
+              />
+              <svg class="modal-icon"><use href="./images/icons.svg#icon-email-black-18dp-1-1" width="18" height="24"></use></svg>
+            </div>
+          </div>
+          <div class="user-name">
+            <label for="user-coment" class="input-label">Comment</label>
+            <div class="modal-wrap">
+              <textarea name="user-coment" id="user-coment" class="modal-textarea" placeholder="Text input"></textarea>          
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
