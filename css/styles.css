@@ -751,11 +751,12 @@ color: var(--link-icon-color);
 }
 
 
-.input-text:focus + .input-icon {
-   fill: var(--logo-color);
-   border-color: var(--logo-color);
+.input-text:focus {   
+border-color: var(--logo-color);
 }
-
+.input-icon:focus {
+fill: var(--logo-color);
+}
 .modal-wrap {
   position: relative;
 }
