@@ -138,8 +138,10 @@ img {
   padding: 24px 0;
   }
 
-.header-menu-link:hover::after,
-.header-menu-link:focus::after {
+.current {
+  color: var(--header-link-color);
+}
+.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -149,6 +151,7 @@ img {
   border-radius: 2px;
   width: 100%;
 }
+
 
 .header-menu-link:hover,
 .header-menu-link:focus {
